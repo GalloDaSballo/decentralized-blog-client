@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Link from "next/link";
+import Link from "../components/Link";
 import styles from "../styles/Index.module.scss";
 import { Post } from "../types";
 import { getFirst100Posts } from "../utils/graphql";
@@ -9,7 +9,7 @@ const Home: React.FC<{ posts: Post[] }> = ({ posts }): JSX.Element => {
         <div className={styles.container}>
             <Head>
                 <title>Create Next App</title>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="favicon.ico" />
             </Head>
 
             <div>

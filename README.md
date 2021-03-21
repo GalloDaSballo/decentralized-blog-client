@@ -1,7 +1,14 @@
-# nextjs-magic-eslint-jest
+# decentralized-blog-client
 
-If there's one template you should use in 2021
-This is the one
+Display articles published on a EVM compatible chain
+This is just the blog static side
+
+See decentralized-blog-admin for how to publish (currently to Mumbai (MATIC Testnet))
+
+## Thank you
+https://github.com/Velenir/nextjs-ipfs-example
+
+This example has helped me set up the IPFS build with NextJS Static Export, massive thank you!
 
 ## NextJS
 
