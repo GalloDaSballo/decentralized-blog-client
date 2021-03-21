@@ -2,7 +2,6 @@ import { Post } from "../../types";
 import { getFirst100Posts, getPost } from "../../utils/graphql";
 
 const SinglePost: React.FC<{ post: Post }> = ({ post }) => {
-    console.log("SinglePost post", post);
     return (
         <div>
             <img alt={post.title} src={post.imageHash} />
@@ -23,9 +22,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-    const res = await getFirst100Posts(
-        "0x223ecddc2ff392e286c88d742198eb447f34f67e",
-    );
+    const res = await getFirst100Posts();
     return {
         paths: res.map((post) => ({ params: { id: post.id } })),
         fallback: false,
