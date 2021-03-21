@@ -58,7 +58,7 @@ export const UserContextProvider: React.FC = ({ children }) => {
     };
 
     useEffect(() => {
-        m = new Magic(process.env.NEXT_PUBLIC_MAGIC_KEY || "");
+        // m = new Magic(process.env.NEXT_PUBLIC_MAGIC_KEY || "");
 
         /**
          * Checks if the user is already logged in, if they are, log them in automatically
